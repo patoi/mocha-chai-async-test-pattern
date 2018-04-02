@@ -17,7 +17,7 @@ describe('testFunction', () => {
   it('is OK - not bad', async () => {
     let result = await testFunction(true)
     expect(result).to.be.equal('OK')
-    // flawed test throws an error, it's OK
+    // flawed test throws an error, but it is not a test error (AssertionError)
   })
 
   it('is not OK - bad!', async () => {
@@ -52,7 +52,7 @@ describe('testFunction', () => {
       expect(error.message).to.be.equal('not OK')
     }
   })
-  
+
   it('is OK - better way', async function() {
     let result, error
     try {

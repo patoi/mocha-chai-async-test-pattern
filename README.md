@@ -21,9 +21,9 @@ function testFunction (isOK) {
 
 ```javascript
 it('is OK - not bad', async () => {
-  let result = await testFunction(true)
+  let result = await testFunction(test)
   expect(result).to.be.equal('OK')
-  // flawed test throws an error, it's OK
+  // flawed test throws an error, but it is not a test error (AssertionError)
 })
 
 it('is not OK - bad!', async () => {
@@ -75,3 +75,5 @@ it('is OK - better way', async function() {
   }
 })
 ```
+
+**TIP:** to show error messages change ```if (isOK === true)``` to ```if (isOK !== true)```
