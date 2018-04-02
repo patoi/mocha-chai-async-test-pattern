@@ -62,6 +62,7 @@ it('is not OK - better way', async function() {
     expect(error.message).to.be.equal('not OK')
   }
 })
+
 it('is OK - better way', async function() {
   let result, error
   try {
