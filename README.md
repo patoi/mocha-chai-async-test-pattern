@@ -17,7 +17,7 @@ function testFunction (isOK) {
 }
 ```
 
-Naive testing async/await code:
+🚫 Naive testing async/await code:
 
 ```javascript
 it('is OK - not bad', async () => {
@@ -47,7 +47,7 @@ it('is not OK - not bad, but it could be better', async () => {
 })
 ```
 
-Better way:
+✅ Better way:
 
 ```javascript
 // handlig resolve, reject in try - catch, and run tests in finally block
