@@ -5,7 +5,7 @@ chai.use(dirtyChai)
 
 function testFunction (isOK) {
   return new Promise((resolve, reject) => {
-    if (isOK) {
+    if (isOK === true) {
       resolve('OK')
     } else {
       reject(new Error('not OK'))
