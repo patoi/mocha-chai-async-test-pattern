@@ -21,7 +21,7 @@ function testFunction (isOK) {
 
 ```javascript
 it('is OK - not bad', async () => {
-  let result = await testFunction(test)
+  let result = await testFunction(true)
   expect(result).to.be.equal('OK')
   // flawed test throws an error, but it is not a test error (AssertionError)
 })
