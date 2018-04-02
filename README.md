@@ -3,7 +3,7 @@ Async/await test example with Chai, Mocha and try-catch-finally without chai-as-
 
 Writing flawless test is not easy.
 
-Example code:
+✨ Example code:
 
 ```javascript
 function testFunction (isOK) {
