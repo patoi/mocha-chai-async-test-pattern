@@ -12,7 +12,6 @@ async function testFunction (isOK) {
 }
 
 describe('testFunction', () => {
-  console.log(testFunction)
   it('is OK - not bad', async () => {
     let result = await testFunction(true)
     expect(result).to.be.equal('OK')
