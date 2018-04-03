@@ -17,6 +17,8 @@ function testFunction (isOK) {
 }
 ```
 
+**Simulating code flaw:*** change ```isOK === true```  to ```isOK === false``` in testFunction.
+
 👎 Naive testing async/await code:
 
 ```javascript
@@ -28,7 +30,7 @@ it('is OK - not bad', async () => {
 
 it('is not OK - bad!', async () => {
   try {
-    let result = await testFunction(true)
+    let result = await testFunction(false)
     // flawed tests __pass__ instead of throw an error!
   } catch (err) {
     expect(err.message).to.be.equal('not OK')
