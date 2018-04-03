@@ -3,6 +3,8 @@ Async/await test example with Chai, Mocha and try-catch-finally without chai-as-
 
 Writing flawless test is not easy.
 
+More information on [medium.com](https://medium.com/@patoistvan/testing-async-await-in-javascript-8a449a5df7af)
+
 ✨ Example code:
 
 ```javascript
