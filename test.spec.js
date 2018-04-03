@@ -3,17 +3,16 @@ const dirtyChai = require('dirty-chai')
 const expect = chai.expect
 chai.use(dirtyChai)
 
-function testFunction (isOK) {
-  return new Promise((resolve, reject) => {
+async function testFunction (isOK) {
     if (isOK === true) {
-      resolve('OK')
+      return 'OK'
     } else {
-      reject(new Error('not OK'))
+      throw new Error('not OK')
     }
-  })
 }
 
 describe('testFunction', () => {
+  console.log(testFunction)
   it('is OK - not bad', async () => {
     let result = await testFunction(true)
     expect(result).to.be.equal('OK')

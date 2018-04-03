@@ -8,14 +8,12 @@ More information on [medium.com](https://medium.com/@patoistvan/testing-async-aw
 ✨ Example code:
 
 ```javascript
-function testFunction (isOK) {
-  return new Promise((resolve, reject) => {
+async function testFunction (isOK) {
     if (isOK === true) {
-      resolve('OK')
+      return 'OK'
     } else {
-      reject(new Error('not OK'))
+      throw new Error('not OK')
     }
-  })
 }
 ```
 
