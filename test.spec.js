@@ -47,7 +47,7 @@ describe('testFunction', () => {
     } catch (err) {
       error = err
     } finally {
-      expect(result).to.be.undefined() // handling flawed test
+      expect(result).to.be.undefined() // guard: handling code flaw
       expect(error.message).to.be.equal('not OK')
     }
   })
@@ -59,7 +59,7 @@ describe('testFunction', () => {
     } catch (err) {
       error = err
     } finally {
-      expect(error).to.be.undefined() // handling flawed test
+      expect(error).to.be.undefined() // guard: handling code flaw
       expect(result).to.be.equal('OK')
     }
   })
