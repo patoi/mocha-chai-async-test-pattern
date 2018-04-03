@@ -77,5 +77,3 @@ it('is OK - better way', async function() {
   }
 })
 ```
-
-☝️ **TIP:** to show all error messages change ```if (isOK === true)``` to ```if (isOK === false)```
