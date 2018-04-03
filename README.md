@@ -19,7 +19,7 @@ async function testFunction (isOK) {
 
 **Simulating code flaw:** change ```isOK === true```  to ```isOK === false``` in testFunction.
 
-👎 Naive testing async/await code:
+## 👎 Naive testing async/await code
 
 ```javascript
 it('is OK - not bad', async () => {
@@ -49,7 +49,7 @@ it('is not OK - not bad, but it could be better', async () => {
 })
 ```
 
-👍 Better way:
+## 👍 Better way
 
 ```javascript
 // handlig resolve, reject in try - catch, and run tests in finally block
@@ -78,4 +78,4 @@ it('is OK - better way', async function() {
 })
 ```
 
-☝️ **TIP:** to show all error messages change ```if (isOK === true)``` to ```if (isOK !== true)```
+☝️ **TIP:** to show all error messages change ```if (isOK === true)``` to ```if (isOK === false)```
