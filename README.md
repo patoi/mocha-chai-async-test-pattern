@@ -17,7 +17,7 @@ function testFunction (isOK) {
 }
 ```
 
-**Simulating code flaw:*** change ```isOK === true```  to ```isOK === false``` in testFunction.
+**Simulating code flaw:** change ```isOK === true```  to ```isOK === false``` in testFunction.
 
 👎 Naive testing async/await code:
 
